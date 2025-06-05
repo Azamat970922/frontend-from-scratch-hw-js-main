@@ -2,4 +2,12 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum
+let sum = 0
+let n = 1
+
+while(n <= 20) {
+    sum += n;
+    n++;
+}
+
+console.log("Сумма чисел от 1 до 20" , sum);
