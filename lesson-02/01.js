@@ -15,7 +15,7 @@ const hasTemporaryPass = false
 
 let isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)
     console.log("You have the permission!!!")
-    alert("You have the permission!!!")
+    
 
 
 
