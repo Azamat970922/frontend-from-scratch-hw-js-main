@@ -5,5 +5,9 @@
  */
 
 const score = 70 // тестовое значение, можно изменять
-let grade
+let grade 
 // your code
+if (score >= 70 && score <= 79) {
+    grade = 'C'
+    console.log("Grade:" , grade);
+}
