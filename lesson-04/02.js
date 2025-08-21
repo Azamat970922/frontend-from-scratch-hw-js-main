@@ -14,16 +14,18 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-const numbers = [1,2,5,8,9,1,2,7,3,6,5]
 
-function findUniqueElements(numbers) {
+
+function findUniqueElements(array) {
     let result = [];
-    for (let i = 0; i < numbers.length; i++) {    
-        if (includesElement(result, numbers[i]) === false) {
-            result.push(numbers[i]);
+    for (let i = 0; i < array.length; i++) {    
+        if (includesElement(result, array[i]) === false) {
+            result.push(array[i]);
         }
     }
-      return result;
+    return result;
 }
 
-console.log(findUniqueElements(numbers));
+const test = [1,2,5,8,9,1,2,7,3,6,5];
+
+console.log(findUniqueElements(test));
