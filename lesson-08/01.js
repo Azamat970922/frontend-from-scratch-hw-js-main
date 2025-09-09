@@ -6,4 +6,9 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-function capitalizeWords() {}
+function capitalizeWords(str) {
+  let word = str.split(" ");
+  for (let i = 0; i < str.length; i++){
+    let firstLetter = fdb
+  }
+}
