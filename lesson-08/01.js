@@ -7,8 +7,16 @@
 */
 
 function capitalizeWords(str) {
-  let word = str.split(" ");
-  for (let i = 0; i < str.length; i++){
-    let firstLetter = fdb
+  let words = str.split(" ")
+  for (let i = 0; i < words.length; i++) {
+  let word = words[i];              
+  let firstLetter = word[0];         
+  let rest = word.slice(1);  
+  words[i] = firstLetter.toUpperCase() + rest     
   }
+return words.join(" ");
+ 
 }
+
+console.log(capitalizeWords("My name is azamat"))
+
